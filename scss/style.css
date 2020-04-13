@@ -1,0 +1,390 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 150px;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5), 0px 2px 4px 0px rgba(0, 0, 0, 0.5), 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5), 0px 2px 4px 0px rgba(0, 0, 0, 0.5), 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.crow {
+  display: inline-block;
+  position: relative;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.crow img {
+  z-index: 1;
+  position: absolute;
+  top: 115px;
+  -webkit-animation: crow 2s infinite;
+          animation: crow 2s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.duty-f {
+  display: inline-block;
+  position: relative;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.duty-f img {
+  z-index: 1;
+  position: absolute;
+  -webkit-animation: duty-f 2s infinite;
+          animation: duty-f 2s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  top: 50px;
+  left: 30px;
+}
+
+.qp {
+  display: inline-block;
+  position: relative;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.qp img {
+  z-index: 1;
+  position: absolute;
+  -webkit-animation: qp 2s infinite;
+          animation: qp 2s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  left: 110px;
+  top: 25px;
+}
+
+@-webkit-keyframes crow {
+  from {
+    left: 0;
+    top: 0;
+  }
+  to {
+    left: 85px;
+    top: -70px;
+  }
+}
+
+@keyframes crow {
+  from {
+    left: 0;
+    top: 0;
+  }
+  to {
+    left: 85px;
+    top: -70px;
+  }
+}
+
+@-webkit-keyframes duty-f {
+  from {
+    top: 50px;
+    left: 30px;
+  }
+  to {
+    left: -30px;
+    top: 90px;
+  }
+}
+
+@keyframes duty-f {
+  from {
+    top: 50px;
+    left: 30px;
+  }
+  to {
+    left: -30px;
+    top: 90px;
+  }
+}
+
+@-webkit-keyframes qp {
+  from {
+    left: -149px;
+    top: -8px;
+  }
+  to {
+    left: -8px;
+    top: 21px;
+  }
+}
+
+@keyframes qp {
+  from {
+    left: -149px;
+    top: -8px;
+  }
+  to {
+    left: -8px;
+    top: 21px;
+  }
+}
+
+.logo {
+  z-index: 2;
+}
+
+.logo img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: rgba(255, 245, 246, 0.966);
+  font-family: "Lato", sans-serif;
+  padding: 15px 20px;
+  font-weight: 600;
+  padding: 15px 20px;
+}
+
+.nav ul li a:hover {
+  background-color: #556faa;
+  box-shadow: 0px 0px 7px 2px rgba(27, 27, 97, 0.53);
+  -webkit-box-shadow: 0px 0px 7px 2px rgba(27, 27, 97, 0.53);
+  -moz-box-shadow: 0px 0px 7px 2px rgba(27, 27, 97, 0.53);
+}
+
+.home {
+  height: 735px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(255, 245, 246, 0.966);
+  font-family: "Lato", sans-serif;
+  background: #4dcc6b;
+  background: -webkit-gradient(linear, left bottom, left top, from(#4dcc6b), color-stop(80%, #40a840));
+  background: linear-gradient(0deg, #4dcc6b 0%, #40a840 80%);
+  background: -moz-linear-gradient(0deg, #4dcc6b 0%, #40a840 80%);
+}
+
+.home h1 {
+  color: rgba(146, 33, 156, 0.616);
+  font-size: 40px;
+  font-weight: bold;
+  word-spacing: -3px;
+  letter-spacing: -0.7px;
+  margin: 0 0 35px 0;
+}
+
+.home p {
+  color: #369e4e79;
+  font-size: 18px;
+}
+
+.home p:last-child {
+  margin: 20px 0 0 0;
+  color: #57be6f79;
+}
+
+.goods {
+  color: rgba(255, 245, 246, 0.966);
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  padding: 200px 50px 65px 50px;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  background: #3152b8;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3152b8), color-stop(70%, #4dcc6b));
+  background: linear-gradient(0deg, #3152b8 0%, #4dcc6b 70%);
+  background: -moz-linear-gradient(0deg, #3152b8 0%, #4dcc6b 70%);
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.grid a {
+  box-shadow: 0px 0px 5px 1px #385372;
+  -webkit-box-shadow: 0px 0px 5px 1px #385372;
+  -moz-box-shadow: 0px 0px 5px 1px #385372;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.grid a img {
+  height: 306px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid p {
+  font-size: 15px;
+  padding: 15px;
+  background-color: #385372;
+  margin-top: -4px;
+  color: #d4d5d7;
+  font-weight: 600;
+}
+
+.grid p span {
+  color: #385372;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: normal;
+  font-stretch: condensed;
+}
+
+.hover-good:hover .code {
+  color: #ff7f50;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  background: #941e9e;
+  background: -webkit-gradient(linear, left bottom, left top, from(#941e9e), color-stop(80%, #3152b8));
+  background: linear-gradient(0deg, #941e9e 0%, #3152b8 80%);
+  background: -moz-linear-gradient(0deg, #941e9e 0%, #3152b8 80%);
+  width: 100%;
+  height: 765px;
+}
+
+.together h2 {
+  font-size: 45px;
+  color: #ececec;
+  font-weight: 600;
+}
+
+.together p {
+  font-style: italic;
+  font-size: 25px;
+  color: #c4c6c8;
+  margin: 15px 0 0 0;
+}
+
+.soc-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin: 35px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.soc-link a {
+  text-decoration: none;
+  font-size: 21px;
+  color: #f2f7f7;
+  letter-spacing: 0.5px;
+  padding: 0 12px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.soc-link a:hover {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer {
+  width: 100%;
+  background: #941e9e;
+  border-top: 3px solid burlywood;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin-bottom: 90px;
+}
+
+.wrapper p, .wrapper a {
+  color: #e4ebbc;
+  font-family: "Lato", sans-serif;
+  padding: 25px 0 25px 0;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
